@@ -1,0 +1,371 @@
+/* Shared site styles */
+:root {
+  --ink: #1f2933;
+  --muted: #5f6875;
+  --line: #d9dee5;
+  --accent: #123f63;
+  --utsa: #f15a22;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.site-nav {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255,255,255,0.97);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.site-nav-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+.site-brand {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.site-links { display: flex; gap: 18px; align-items: center; }
+.site-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid transparent;
+  padding: 3px 0;
+}
+.site-links a:hover, .site-links a[aria-current="page"] {
+  color: var(--accent);
+  border-bottom-color: var(--utsa);
+}
+
+.site-footer {
+  max-width: 980px;
+  margin: 22px auto 0;
+  padding: 18px 18px 28px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+.arka-academic-site {
+    --ink: #1f2933;
+    --muted: #5f6875;
+    --line: #d9dee5;
+    --accent: #123f63;
+    --utsa: #f15a22;
+
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 24px 18px 28px;
+    color: var(--ink);
+    background: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.58;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  .arka-academic-site * {
+    box-sizing: border-box;
+  }
+
+  .arka-academic-site a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(18, 63, 99, 0.28);
+  }
+
+  .arka-academic-site a:hover {
+    color: var(--utsa);
+    border-bottom-color: var(--utsa);
+  }
+
+  .arka-academic-site p {
+    margin: 0 0 12px;
+  }
+
+.arka-masthead {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 230px;
+  gap: 28px;
+  align-items: start;
+  padding-bottom: 22px;
+  border-bottom: 2px solid var(--ink);
+  margin-bottom: 24px;
+}
+
+  .arka-masthead h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 6vw, 58px);
+    line-height: 1;
+    font-weight: 500;
+    margin: 0 0 10px;
+    letter-spacing: -0.02em;
+  }
+
+  .arka-title {
+    font-size: 19px;
+    margin: 0;
+    color: var(--ink);
+  }
+
+.arka-endowed-title {
+  margin: 4px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  color: var(--utsa);
+  font-weight: 700;
+}
+
+  .arka-institution {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: 16px;
+  }
+
+  .arka-office-line {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .arka-interests {
+    margin: 18px 0 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    color: var(--accent);
+  }
+
+  .arka-links {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    align-items: center;
+  }
+
+.arka-photo {
+  width: 230px;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  filter: grayscale(8%);
+}
+
+  .arka-section {
+    padding-top: 20px;
+    margin-top: 6px;
+  }
+
+  .arka-section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink);
+  }
+
+  .arka-section h3 {
+    font-size: 17px;
+    margin: 22px 0 10px;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .arka-lede {
+    font-size: 17px;
+    max-width: 840px;
+  }
+
+  .arka-entry {
+    display: grid;
+    grid-template-columns: 118px minmax(0, 1fr);
+    gap: 18px;
+    margin: 0 0 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #edf0f3;
+  }
+
+  .arka-entry:last-child {
+    border-bottom: none;
+  }
+
+  .arka-year {
+    font-size: 14px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .arka-entry-main strong {
+    color: var(--ink);
+    font-weight: 700;
+  }
+
+  .arka-entry-main em {
+    color: var(--muted);
+  }
+
+  .arka-note {
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  .arka-person {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #edf0f3;
+  }
+
+  .arka-person:last-child {
+    border-bottom: none;
+  }
+
+  .arka-person-name {
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  .arka-institution-group {
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .arka-institution-group:last-child {
+    border-bottom: none;
+  }
+
+  #about .arka-institution-group .arka-entry {
+    border-bottom: none;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+  }
+
+  @media (max-width: 760px) {
+    .arka-academic-site {
+      padding: 20px 14px 24px;
+      line-height: 1.55;
+    }
+
+    .arka-masthead {
+      grid-template-columns: 1fr;
+      gap: 18px;
+      padding-bottom: 20px;
+      margin-bottom: 22px;
+    }
+
+    .arka-photo {
+      width: 180px;
+    }
+
+    .arka-section {
+      padding-top: 16px;
+      margin-top: 4px;
+    }
+
+    .arka-section h2 {
+      font-size: 26px;
+      margin-bottom: 14px;
+    }
+
+    .arka-section h3 {
+      margin: 20px 0 8px;
+    }
+
+    .arka-entry {
+      grid-template-columns: 1fr;
+      gap: 2px;
+      margin-bottom: 9px;
+      padding-bottom: 9px;
+    }
+
+    .arka-year {
+      font-weight: 700;
+    }
+
+    .arka-person {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+/* Personal page */
+.personal-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 34px 18px 28px;
+  color: var(--ink);
+  box-sizing: border-box;
+  line-height: 1.62;
+  font-size: 16px;
+}
+.personal-page * { box-sizing: border-box; }
+.personal-page h1, .personal-page h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  color: var(--ink);
+}
+.personal-page h1 {
+  font-size: clamp(38px, 6vw, 54px);
+  line-height: 1.05;
+  margin: 0 0 12px;
+}
+.personal-page h2 {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 34px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+.personal-lede {
+  max-width: 850px;
+  font-size: 17px;
+  margin: 0;
+}
+.map-subtitle {
+  margin: 12px 0 18px;
+  color: var(--muted);
+}
+.map-count {
+  color: var(--utsa);
+  font-weight: 700;
+}
+#visited-map {
+  width: 100%;
+  min-height: 520px;
+}
+
+@media (max-width: 760px) {
+  .site-nav-inner { padding: 10px 14px; }
+  .site-brand { font-size: 18px; }
+  .site-links { gap: 12px; }
+  .site-links a { font-size: 12px; }
+  .personal-page { padding: 26px 14px 24px; }
+  .personal-page h1 { font-size: 38px; }
+  .personal-page h2 { font-size: 26px; }
+  .personal-lede { font-size: 16px; }
+  #visited-map { min-height: 360px; }
+  .site-footer { padding: 16px 14px 24px; }
+}
