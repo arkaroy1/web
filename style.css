@@ -369,3 +369,28 @@ body {
   #visited-map { min-height: 360px; }
   .site-footer { padding: 16px 14px 24px; }
 }
+
+
+/* Consistent typography for smaller masthead text */
+.arka-endowed-title,
+.arka-interests {
+  font-family: inherit;
+}
+
+/* More breathing room between major sections */
+.arka-section {
+  padding-top: 28px;
+  margin-top: 12px;
+}
+
+/* Slightly more separation between entries */
+.arka-entry {
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+}
+
+/* Personal page: give the map more room */
+.personal-page h2 {
+  margin-top: 44px;
+}
+
