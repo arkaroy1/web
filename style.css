@@ -101,7 +101,7 @@ body {
 
 .arka-masthead {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
+  grid-template-columns: minmax(0, 1fr) 260px;
   gap: 32px;
   align-items: start;
   padding-bottom: 22px;
